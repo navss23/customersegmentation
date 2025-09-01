@@ -30,31 +30,6 @@ To identify distinct customer segments for better **targeted marketing**, **risk
 - Four distinct customer groups were identified and profiled.
 - Boxplots and cluster center analysis revealed unique purchasing and credit behaviors across clusters.
 
----
-
-## 🔍 Cluster Profiles (Highlights)
-
-- **Cluster 0**: High spenders with large balances and frequent transactions.
-- **Cluster 1**: Low engagement users with minimal purchases and low limits.
-- **Cluster 2**: Moderate spenders with regular installment use.
-- **Cluster 3**: High cash advance users with large balances but low purchase frequency.
-
----
-
-## 📌 Business Recommendations
-
-- Target **Cluster 0** with premium loyalty programs.
-- Offer **Cluster 1** promotions to increase engagement.
-- Monitor **Cluster 3** for credit risk due to high cash withdrawals.
-
----
-
-## 📂 Files
-
-- `customersegmentationproject.ipynb`: Main notebook with complete workflow
-- `README.md`: Project overview and guide
-
----
 
 ## 📚 Dataset
 
