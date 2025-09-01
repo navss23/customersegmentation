@@ -6,7 +6,7 @@ This project explores **customer segmentation** by analyzing credit card transac
 
 ## 📊 Objective
 
-To identify distinct customer segments for better **targeted marketing**, **risk profiling**, and **service personalization** using clustering techniques like K-Means, Agglomerative Clustering, and DBSCAN.
+To identify distinct customer segments for better **targeted marketing**, **risk profiling**, and **service personalization** using clustering techniques like K-Means.
 
 ---
 
@@ -18,8 +18,7 @@ To identify distinct customer segments for better **targeted marketing**, **risk
 - Dimensionality Reduction (PCA)
 - Clustering:
   - **K-Means** (with Elbow & Silhouette Score)
-  - **Agglomerative Clustering**
-  - **DBSCAN** (with K-Distance plot for epsilon)
+ 
 - Cluster Profiling (Cluster Centers + EDA)
 - Visualization (Seaborn, Matplotlib)
 
@@ -27,7 +26,7 @@ To identify distinct customer segments for better **targeted marketing**, **risk
 
 ## 📈 Results
 
-- **K-Means** was found to be the most balanced and interpretable model based on Silhouette Score (0.42) and PCA visualization.
+- **K-Means** was found to be the most balanced and interpretable model based on Silhouette Score  and PCA visualization.
 - Four distinct customer groups were identified and profiled.
 - Boxplots and cluster center analysis revealed unique purchasing and credit behaviors across clusters.
 
