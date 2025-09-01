@@ -1,14 +1,31 @@
 # 🧠 Customer Segmentation Using Unsupervised Learning
 
-This project explores **customer segmentation** by analyzing credit card transaction data. It applies various unsupervised machine learning algorithms to cluster users into meaningful groups based on their financial behavior.
+The project aims to group customers of a bank based on their transactional and behavioral patterns to better understand their needs and design targeted services. Due to the sensitivity of customer data and its unavailability in the public domain, this project begins by generating a synthetic dataset that simulates real-world customer profiles using the SDV (Synthetic Data Vault) library.
+The project workflow includes the following key steps:
+1.	Data Generation:
+o	A cleaned version of an open-source credit card dataset was used as a base.
+o	Using SDV's GaussianCopula model, realistic synthetic data was generated.
+o	The quality of the synthetic data was validated using SDMetrics, yielding an overall score of 81.74%, ensuring reliability for downstream tasks.
+2.	Data Preprocessing:
+o	Handled missing values, outliers, and irrelevant features.
+o	Standardized the dataset using MinMaxScaler to prepare it for clustering algorithms.
+3.	Feature Engineering:
+o	Selected relevant features such as BALANCE, PURCHASES, CREDIT_LIMIT, and PAYMENTS.
+o	Created derived features like Average Purchase per Transaction and Credit Utilization Ratio for deeper insights.
+4.	Clustering:
+o	Applied K-Means Clustering, choosing the optimal number of clusters (k=3) using the elbow method.
+o	Reduced dimensions with PCA for visualization.
+o	Assigned descriptive labels to each cluster based on behavioral patterns.
+5.	Interpretation and Use Case Mapping:
+o	Mapped each customer group to suitable banking products or strategies:
+-	Cluster 0: Budget-Conscious Users → Offered basic savings and budget planning tools.
 
----
 
-## 📊 Objective
+-	Cluster 1: High-Spending Users → Targeted for premium cards, investment opportunities.
+-	Cluster 2: Revolvers (High balance, low payment) → Recommended credit advisory or risk monitoring.
+This project demonstrates how clustering combined with synthetic data generation can help banks gain deeper insights into customer behavior while preserving privacy. The approach is scalable and applicable to a wide range of domains, including marketing, fraud detection, and credit risk modeling.
 
-To identify distinct customer segments for better **targeted marketing**, **risk profiling**, and **service personalization** using clustering techniques like K-Means.
 
----
 
 ## 🛠️ Techniques Used
 
